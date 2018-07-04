@@ -1,0 +1,15 @@
+{
+    "workbench.iconTheme": "vscode-great-icons",
+    "window.zoomLevel": 0,
+    // "workbench.colorTheme": "One Dark Pro",
+    "workbench.sideBar.location": "left",
+    "atomKeymap.promptV3Features": true,
+    "editor.multiCursorModifier": "ctrlCmd",
+    "editor.formatOnPaste": true,
+    "editor.minimap.enabled": false,
+    "workbench.startupEditor": "newUntitledFile",
+    "window.title": "${activeEditorMedium}${separator}${rootName}",
+    "explorer.autoReveal": true,
+    "todohighlight.isEnable": true,
+    "editor.renderWhitespace": "all"
+}
