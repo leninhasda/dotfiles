@@ -1,0 +1,35 @@
+# git specific
+alias gst="git status"
+alias gl="git log"
+alias gca="git add . && git commit -m "
+alias ga="git add "
+alias ga.="git add ."
+alias gc="git checkout "
+alias gob="git checkout -b "
+
+# docker specific
+alias up="docker-compose up"
+alias down="docker-compose down"
+alias dr="docker "
+
+# map
+alias gospace="cd ~/go/src"
+alias subl.="subl ."
+alias ehost="vi /etc/hosts"
+alias ealias="vi ~/.aliases"
+alias cd.="cd .."
+alias cd..="cd ../.."
+alias cls="clear"
+
+# laravel
+alias tinker="php artisan tinker"
+
+# go specific
+alias gopath="source set-goenv"
+alias setgopath="source set-gopath"
+
+# aglio apibluepring
+alias agliost="aglio --theme-variables streak --theme-template triple "
+
+# python specific
+alias python="python3"
