@@ -1,0 +1,12 @@
+[
+	{ "keys": ["alt+w"], "command": "toggle_setting", "args": {"setting": "word_wrap"}},
+	{ "keys": ["super+\\"], "command": "toggle_side_bar" },
+	{ "keys": ["alt+a"], "command": "focus_side_bar" },
+	{ "keys": ["alt+f"], "command": "reindent"},
+	{ "keys": ["super+shift+o"], "command": "prompt_add_folder" },
+	{ "keys": ["super+e"], "command": "show_overlay", "args": {"overlay": "goto", "show_files": true} },
+	{ "keys": ["ctrl+shift+m"], "command": "set_file_type", "args": {"syntax": "Packages/Markdown/Markdown.tmLanguage"} },
+	{ "keys": ["ctrl+shift+t"], "command": "set_file_type", "args": {"syntax": "Packages/PlainTasks/PlainTasks.tmLanguage"} },
+    { "keys": ["super+b"], "command": "goto_definition" },
+	{ "keys": ["super+;"], "command": "clone_file" }
+]

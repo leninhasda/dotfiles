@@ -13,9 +13,5 @@
     {
         "key": "ctrl+`",
         "command": "workbench.action.terminal.toggleTerminal"
-    },
-    {
-        "key": "cmd+`",
-        "command": "workbench.action.terminal.toggleTerminal"
     }
 ]
