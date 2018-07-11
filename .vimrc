@@ -1,6 +1,11 @@
+" config
 syntax enable
 
-colorscheme desert
+set nocompatible
+filetype off
+
+colorscheme stellarized 
+set background=dark
 
 set backspace=indent,eol,start
 
@@ -14,42 +19,49 @@ set number
 "-------------------------------- GENERAL -------------------------------------"
 
 
-set nocompatible
-filetype off
 
-set rtp+=~/.vim/bundle/vundle
-call vundle#begin()
+"set rtp+=~/.vim/bundle/vundle
+call plug#begin('~/.vim/plugged')
 
-Plugin 'gmarik/Vundle.vim'
+"Plug 'ap/vim-css-color' "Preview color while editing css
+Plug 'ctrlpvim/ctrlp.vim'
+"Plug 'digitaltoad/vim-pug' "syntax highlight for pug template
+"Plug 'easymotion/vim-easymotion'
+Plug 'editorconfig/editorconfig-vim'
+"Plug 'godlygeek/tabular' "tabularize variable declares
 
-Plugin 'ap/vim-css-color'
-Plugin 'ctrlpvim/ctrlp.vim'
-Plugin 'digitaltoad/vim-jade'
-Plugin 'easymotion/vim-easymotion'
-Plugin 'editorconfig/editorconfig-vim'
-Plugin 'godlygeek/tabular'
-Plugin 'groenewege/vim-less'
-Plugin 'itchyny/lightline.vim'
-Plugin 'jiangmiao/auto-pairs'
-Plugin 'mattn/emmet-vim'
-Plugin 'pangloss/vim-javascript'
-Plugin 'scrooloose/nerdtree'
-Plugin 'tmhedberg/matchit'
-Plugin 'tommcdo/vim-exchange'
-Plugin 'tpope/vim-haml'
-Plugin 'tpope/vim-repeat'
-Plugin 'tpope/vim-surround'
-Plugin 'Yggdroot/indentLine'
-Plugin 'trevordmiller/nova-vim'
-Plugin 'airblade/vim-gitgutter'
-Plugin 'tpope/vim-fugitive'
-Plugin 'vim-airline/vim-airline'
-Plugin 'vim-airline/vim-airline-themes'
-Plugin 'arnaud-lb/vim-php-namespace'
-Plugin 'christoomey/vim-tmux-navigator'
+Plug 'itchyny/lightline.vim' "highlights inser/visual/vim mode status bar
+"Plugin 'vim-airline/vim-airline'
+"Plugin 'vim-airline/vim-airline-themes'
 
+Plug 'jiangmiao/auto-pairs' "insert or deletes brackets in pair
+Plug 'mattn/emmet-vim'
+Plug 'pangloss/vim-javascript'
+Plug 'scrooloose/nerdtree' "sidebar
+"Plugin 'tmhedberg/matchit'
+"Plugin 'tommcdo/vim-exchange'
+"Plugin 'tpope/vim-haml'
+"Plugin 'tpope/vim-repeat'
+Plug 'tpope/vim-surround'
+Plug 'Yggdroot/indentLine'
+Plug 'airblade/vim-gitgutter'
+"Plugin 'tpope/vim-fugitive'
+"Plugin 'christoomey/vim-tmux-navigator'
 
-call vundle#end()
+" color themes
+Plug 'nightsense/stellarized'
+Plug 'Siphalor/vim-atomified'
+Plug 'neutaaaaan/iosvkem'
+Plug 'skreek/skeletor.vim'
+Plug 'Jimeno0/vim-chito'
+Plug 'TheAtlasEngine/PastelColors'
+Plug 'napcs/vim-mycontrast'
+Plug 'kaicataldo/material.vim'
+Plug 'phanviet/vim-monokai-pro'
+Plug 'Yggdroot/duoduo'
+Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries'  }
+
+call plug#end()
 
 " basic
 filetype plugin indent on
@@ -58,8 +70,6 @@ set lazyredraw
 
 " theme and color
 set t_Co=256
-set background=dark
-" colorscheme nova
 
 " numbering, rulers and highlight
 " set relativenumber
@@ -72,7 +82,8 @@ highlight Visual ctermbg=255 ctermfg=16
 
 " horizontal limit (ie. colored border, text width)
 " TODO toggle textwidth
-set colorcolumn=81 " make this 81, shouldn't hit it
+highlight ColorColumn ctermbg=darkgrey
+set colorcolumn=120 " make this 81, shouldn't hit it
 
 " fix normal keys, and lock mouse
 set backspace=indent,eol,start
@@ -214,7 +225,7 @@ let g:indentLine_char = '┆'
 " @link https://github.com/itchyny/lightline.vim
 set laststatus=2
 let g:lightline = {
-\ 'colorscheme': 'wombat',
+\ 'colorscheme': 'one', 
 \ 'active': {
 \   'left': [
 \     [ 'mode', 'paste' ],
@@ -231,8 +242,8 @@ let g:lightline = {
 \   'modified': 'LightlineModified',
 \   'filename': 'LightlineFilename',
 \ },
-\ 'separator': { 'left': '', 'right': ''  },
-\ 'subseparator': { 'left': '', 'right': ''  }
+\ 'separator': { 'left': '|', 'right': '|'  },
+\ 'subseparator': { 'left': '|', 'right': '|'  }
 \ }
 
 function! LightlineModified()
@@ -272,9 +283,7 @@ autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 map <C-n> :NERDTreeToggle<CR>
 
-
 "--------------------------------- EXTRA -------------------------------------"
-
 
 " load local vimrc, if any
 silent! source ~/.vimrc.local
