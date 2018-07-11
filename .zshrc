@@ -60,6 +60,7 @@ ZSH_THEME="robbyrussell"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
   git
+  zsh-autosuggestions
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -106,4 +107,4 @@ fi
 export PATH="/usr/local/opt/sqlite/bin:$PATH"
 export PATH="$HOME/personal/tools:$PATH"
 export JAVA_HOME="/urs/libexec/java_home -v 1.8"
-export EDITOR=nano
+export EDITOR=vi
