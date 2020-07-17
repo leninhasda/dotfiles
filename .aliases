@@ -16,20 +16,15 @@ alias adminer="dr run --rm -p 100:8080 adminer"
 
 # map
 alias gospace="cd ~/go/src"
-alias gocr="cd ~/go/src/gitlab.com/codersrank"
-alias goln="cd ~/go/src/github.com/leninhasda"
 alias resources="cd ~/resources"
 alias subl.="subl ."
 alias ehost="vi /etc/hosts"
 alias ealias="vi ~/.aliases"
 alias cd.="cd .."
 alias cd..="cd ../.."
-alias gitlab-pr="mv ~/.ssh/config ~/.ssh/cr-cfg"
-alias gitlab-cr="mv ~/.ssh/cr-cfg ~/.ssh/config"
 
 alias sal="source ~/.aliases"
 alias cls="clear"
-alias sshlenin="ssh ln013hs@104.236.201.51"
 
 # laravel
 alias tinker="php artisan tinker"
