@@ -6,23 +6,46 @@ alias ga="git add "
 alias ga.="git add ."
 alias gc="git checkout "
 alias gob="git checkout -b "
+alias php=/usr/local/bin/php
 
 # docker specific
 alias up="docker-compose up"
 alias down="docker-compose down"
 alias dr="docker "
+alias adminer="dr run --rm -p 100:8080 adminer"
 
 # map
 alias gospace="cd ~/go/src"
+alias gocr="cd ~/go/src/gitlab.com/codersrank"
+alias goln="cd ~/go/src/github.com/leninhasda"
+alias resources="cd ~/resources"
 alias subl.="subl ."
 alias ehost="vi /etc/hosts"
 alias ealias="vi ~/.aliases"
 alias cd.="cd .."
 alias cd..="cd ../.."
+alias gitlab-pr="mv ~/.ssh/config ~/.ssh/cr-cfg"
+alias gitlab-cr="mv ~/.ssh/cr-cfg ~/.ssh/config"
+
+alias sal="source ~/.aliases"
 alias cls="clear"
+alias sshlenin="ssh ln013hs@104.236.201.51"
 
 # laravel
 alias tinker="php artisan tinker"
+
+# lemp 
+alias nginx.start='sudo brew services start nginx'
+alias nginx.stop='sudo brew services stop nginx'
+alias nginx.restart='nginx.stop && nginx.start'
+alias php-fpm.start='sudo brew services start php70'
+alias php-fpm.stop='sudo brew services stop php70'
+alias php-fpm.restart='php-fpm.stop && php-fpm.start'
+alias mysql.start='brew services start mariadb'
+alias mysql.stop='brew services stop mariadb'
+alias mysql.restart='mysql.stop && mysql.start'
+alias localserver.stop='mysql.stop && nginx.stop && php-fpm.stop'
+alias localserver.start='mysql.start && nginx.start && php-fpm.start'
 
 # go specific
 alias gopath="source set-goenv"
@@ -32,4 +55,5 @@ alias setgopath="source set-gopath"
 alias agliost="aglio --theme-variables streak --theme-template triple "
 
 # python specific
-alias python="python3"
+#alias python="python3"
+#

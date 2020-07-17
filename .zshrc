@@ -2,7 +2,7 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH=$HOME/.oh-my-zsh
+export ZSH="/Users/lenin/.oh-my-zsh"
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
@@ -60,6 +60,13 @@ ZSH_THEME="robbyrussell"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
   git
+  colored-man-pages
+  colorize 
+  pip 
+  python 
+  brew 
+  osx 
+#  zsh-syntax-highlighting
   zsh-autosuggestions
 )
 
@@ -95,16 +102,28 @@ alias zshconfig="vi ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 # add aliases file
-if [ -f ~/config/.aliases ]; then
-  source ~/config/.aliases
+if [ -f ~/.aliases ]; then
+  source ~/.aliases
 fi
 
-# add private aliases file
-if [ -f ~/.pr-aliases ]; then
-  source ~/.pr-aliases
-fi
+# go specific
+export GOPATH=$HOME/go
+export GOBIN=$GOPATH/bin
+export GOROOT=/usr/local/opt/go/libexec
+export PATH=$PATH:$GOROOT:$GOPATH:$GOBIN
 
+# misc
 export PATH="/usr/local/opt/sqlite/bin:$PATH"
-export PATH="$HOME/personal/tools:$PATH"
-export JAVA_HOME="/urs/libexec/java_home -v 1.8"
-export EDITOR=vi
+export PATH="/Users/lenin/tools:$PATH"
+export JAVA_HOME="/usr/libexec/java_home -v 1.8"
+export GOOGLE_APPLICATION_CREDENTIALS=$GOPATH/src/gitlab.com/codersrank/candidate_parser/app/gcloud_dev_service_account.json
+export PATH="$HOME/.composer/vendor/bin:$PATH"
+
+
+# nvm settings 
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+bindkey -v
+
