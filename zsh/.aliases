@@ -1,0 +1,21 @@
+alias turnoffautoswitch="defaults write com.apple.dock workspaces-auto-swoosh -bool NO && killall Dock"
+alias cls=clear
+
+alias sso-login="aws sso login --profile sso-hf-it-developer"
+alias sso-dr-login="aws ecr get-login-password --region eu-west-1 --profile sso-hf-it-developer | docker login --username AWS --password-stdin https://489198589229.dkr.ecr.eu-west-1.amazonaws.com"
+
+alias gca="git commit -v -a -m"
+alias rcs="code ~/001-resource"
+
+
+alias kc=kubectl
+alias dr=docker
+alias drc=docker-compose
+
+alias tf=terraform
+
+alias vpnsetup="sudo openvpn --config /etc/openvpn/client.conf"
+alias ovpn="sudo openvpn --config ~/.config/openvpn/client.ovpn --auth-user-pass ~/.openvpn-auth"
+
+alias vi=nvim
+alias r-tmux=tmux source-file ~/.tmux.conf
