@@ -29,4 +29,7 @@ git-conf:
 	ln -s $(HOME)/dotfiles/git/.gitignore $(HOME)/.gitignore
 	
 nvim-conf:
-	@echo "will write later"
+	rm -f $(HOME)/.config/nvim/init.lua
+	ln -s $(HOME)/dotfiles/nvim/init.lua $(HOME)/.config/nvim/init.lua
+	rm -f $(HOME)/.config/nvim/plugins.lua
+	ln -s $(HOME)/dotfiles/nvim/init.lua $(HOME)/.config/nvim/lua/plugins.lua
