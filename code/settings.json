@@ -1,8 +1,10 @@
 {
-    "terminal.integrated.fontSize": 14,
+    "editor.fontFamily": "'Fira Code', Menlo, Monaco, 'Courier New', monospace",
+    "editor.fontSize": 18,
+    "terminal.integrated.fontSize": 15,
     // "terminal.integrated.fontFamily": "Courier New",
-    "terminal.integrated.lineHeight": 1.5,
-    "editor.lineHeight": 26,
+    "terminal.integrated.lineHeight": 1.8,
+    "editor.lineHeight": 30,
     "terminal.integrated.fontWeightBold": "normal",
     "editor.multiCursorModifier": "ctrlCmd",
     "editor.formatOnPaste": true,
@@ -12,7 +14,7 @@
     // "todohighlight.isEnable": true,
     "editor.renderWhitespace": "all",
     "workbench.editor.closeEmptyGroups": false,
-    "workbench.colorTheme": "Gruvbox Dark Hard",
+    "workbench.colorTheme": "Mariana Pro (Cool)",
     "workbench.iconTheme": "material-icon-theme",
     "editor.wordWrap": "off",
     "go.useLanguageServer": true,
@@ -86,8 +88,6 @@
     // "todo.formatting.enabled": true, // Enable markdown-like formatting
     "todo.timekeeping.created.enabled": true,
     "explorer.confirmDragAndDrop": false,
-    "editor.fontFamily": "'Fira Code', Menlo, Monaco, 'Courier New', monospace",
-    "editor.fontSize": 16,
     // "editor.fontWeight": "500",
     // "todo.timekeeping.created.time": true, // Insert the time inside the @created tag
     // "todo.timekeeping.created.format": "YY-MM-DD HH:mm", // Format used for displaying time inside @created
@@ -282,5 +282,6 @@
     "[python]": {
         "editor.formatOnType": true
     },
-    "explorer.confirmDelete": false
+    "explorer.confirmDelete": false,
+    "editor.minimap.enabled": false
 }
