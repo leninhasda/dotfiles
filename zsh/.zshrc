@@ -71,7 +71,7 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git colored-man-pages colorize pip python zsh-autosuggestions)
+plugins=(git colored-man-pages colorize pip python zsh-autosuggestions zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -127,3 +127,6 @@ set -o vi
 alias cls=clear
 alias docker-compose="docker compose"
 
+## tmp
+export GDK_SCALE=1
+export GDK_DPI_SCALE=1.5

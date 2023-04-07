@@ -15,7 +15,7 @@ alias drc=docker-compose
 alias tf=terraform
 
 alias vpnsetup="sudo openvpn --config /etc/openvpn/client.conf"
-alias ovpn="sudo openvpn --config ~/.config/openvpn/client.ovpn --auth-user-pass ~/.openvpn-auth"
+alias start-vpn="sudo openvpn --config ~/.config/openvpn/client.ovpn --auth-user-pass ~/.openvpn-auth"
 
 alias vi=nvim
 alias r-tmux=tmux source-file ~/.tmux.conf
