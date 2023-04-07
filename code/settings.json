@@ -1,6 +1,6 @@
 {
     "editor.fontFamily": "'Fira Code', Menlo, Monaco, 'Courier New', monospace",
-    "editor.fontSize": 18,
+    "editor.fontSize": 15,
     "terminal.integrated.fontSize": 15,
     // "terminal.integrated.fontFamily": "Courier New",
     "terminal.integrated.lineHeight": 1.8,
@@ -283,5 +283,6 @@
         "editor.formatOnType": true
     },
     "explorer.confirmDelete": false,
-    "editor.minimap.enabled": false
+    "editor.lineNumbers": "relative",
+    "window.zoomLevel": -1
 }
