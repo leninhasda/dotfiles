@@ -5,6 +5,11 @@
         "command": "workbench.action.toggleMaximizedPanel"
     },
     {
+        "key": "ctrl+shift+r",
+        "command": "workbench.action.showAllSymbols",
+        "when": "editorFocus || sidebarFocus"
+    },
+    {
         "key": "ctrl+g",
         "command": "editor.action.goToDeclaration",
     },
@@ -140,5 +145,17 @@
         "key": "capslock",
         "command": "extension.vim_escape",
         "when": "editorTextFocus && vim.active && !inDebugRepl"
+    },
+    {
+        "key": "ctrl+shift+\\",
+        "command": "workbench.action.toggleAuxiliaryBar"
+    },
+    {
+        "key": "ctrl+alt+b",
+        "command": "-workbench.action.toggleAuxiliaryBar"
+    },
+    {
+        "key": "ctrl+k j",
+        "command": "editor.action.joinLines"
     }
 ]

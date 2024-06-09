@@ -1,10 +1,15 @@
 {
-    "editor.fontFamily": "'Fira Code', Menlo, Monaco, 'Courier New', monospace",
-    "editor.fontSize": 15,
+    "editor.lineHeight": 30,
+
+    // terminal
+    
+    // plugins
+    // plugin:cucumber
+    // "indentRainbow.lightIndicatorStyleLineWidth": 1,
+    "cucumberautocomplete.skipDocStringsFormat": false,
     "terminal.integrated.fontSize": 15,
     // "terminal.integrated.fontFamily": "Courier New",
     "terminal.integrated.lineHeight": 1.8,
-    "editor.lineHeight": 30,
     "terminal.integrated.fontWeightBold": "normal",
     "editor.multiCursorModifier": "ctrlCmd",
     "editor.formatOnPaste": true,
@@ -19,8 +24,10 @@
     "editor.wordWrap": "off",
     "go.useLanguageServer": true,
     "cSpell.userWords": [
+        "anonymized",
         "Santali",
-        "anonymized"
+        "sqlx",
+        "Wrapf"
     ],
     //TODO Plus
     // "todo.file.name": "*.list", // Todo file name. Other supported names are: `*.todo`, `*.todos`, `*.task`, `*.tasks`, `*.taskpaper` and `todolist.txt`
@@ -36,8 +43,8 @@
      // Globs to use for excluding files
     // "todo.file.view.expanded": true, // Start the tree in an expanded state
     "todo.indentation": "  ", // String used for indentation
-    // "todo.symbols.box": "☐", // Box symbol
-    // "todo.symbols.done": "✔", // Done symbol
+    "todo.symbols.box": "[ ]", // Box symbol
+    "todo.symbols.done": "[x]", // Done symbol
     // "todo.symbols.cancelled": "✘", // Cancelled symbol
     // "todo.colors.done": "#a6e22e", // Done todo color
     // "todo.colors.cancelled": "#f92672", // Cancelled todo color
@@ -54,15 +61,7 @@
     //     "#e5d145",
     //     "#ae81ff"
     // ], // Special tags' background colors
-    "todo.colors.tags.foreground": [
-        "#000000",
-        "#ff0000",
-        "#00ff00",
-        "#0000ff",
-        "#72c2ff",
-        "#ff00ff",
-        "#0ebeff"
-    ], // Special tags' foreground colors
+    
     // "todo.colors.types": {
     //     "TODO": "#ffcc00",
     //     "FIXME": "#cc0000" ...
@@ -76,8 +75,19 @@
         "today",
         "in-review",
         "blocked",
-        "moved"
+        "moved",
+        "started"
     ], // Special tags' names
+    "todo.colors.tags.foreground": [
+        "#000000",
+        "#ff0000",
+        "#00ff00",
+        "#0000ff",
+        "#72c2ff",
+        "#ff00ff",
+        "#0ebeff",
+        "#0000ff"
+    ], // Special tags' foreground colors
     // "todo.tags.namesInference": true, // Infer commonly used tags' names
     // "todo.archive.name": "Archive", // Name of the special "Archive" section
     // "todo.archive.remove.emptyProjects": true, // Remove projects without todos
@@ -255,7 +265,16 @@
                     }
                 },
                 {
+                    "scope": "support.type.property-name",
+                    "settings": {
+                        // "foreground": "#b75301"
+                        "foreground": "#A3CE9E"
+                    }
+                },
+                {
                     "scope": "string.quoted.double.json.comments",
+                    // "scope": "string.quoted.double",
+                    // "scope": "support.type.property-name.json.comments",
                     "settings": {
                         "foreground": "#deb510"
                     }
@@ -284,5 +303,8 @@
     },
     "explorer.confirmDelete": false,
     "editor.lineNumbers": "relative",
-    "window.zoomLevel": -1
+    "editor.fontSize": 17,
+    "githubPullRequests.pullBranch": "never",
+    "telemetry.telemetryLevel": "off",
+    "go.goroot": "/snap/go/current"
 }
