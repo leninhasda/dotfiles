@@ -15,7 +15,12 @@ alias drc=docker-compose
 alias tf=terraform
 
 alias vpnsetup="sudo openvpn --config /etc/openvpn/client.conf"
-alias start-vpn="sudo openvpn --config ~/.config/openvpn/client.ovpn --auth-user-pass ~/.openvpn-auth"
+alias vpn="sudo openvpn --config ~/.config/openvpn/client.ovpn --auth-user-pass ~/.vpn-auth"
+
+alias vpn3-on="cat ~/.vpn-auth | openvpn3 session-start -c ~/.config/openvpn/client.ovpn"
+alias vpn3-off-single="openvpn3 session-manage --disconnect --session-path $(openvpn3 sessions-list | grep -i path | awk '{print $2}')"
+alias vpn3-off="openvpn3 sessions-list | grep -i path | awk '{print $2}'| xargs -n 1 openvpn3 session-manage --disconnect --session-path"
 
 alias vi=nvim
 alias r-tmux=tmux source-file ~/.tmux.conf
+

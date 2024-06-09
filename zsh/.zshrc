@@ -112,12 +112,17 @@ export PATH="$PATH:$HOME/go/bin"
 # values
 export KUBECONFIG="$HOME/.kube/config:$HOME/.kube/eksconfig"
 
+#export ***REMOVED***
+#export ***REMOVED***
 export ***REMOVED***
 
 export GO111MODULE="on"
 export GOPRIVATE=github.com/hellofresh
 
 export EDITOR=nvim
+export TERM=xterm
+
+export VAULT_ADDR="https://vault.hellofresh.io/"
 
 
 # setting
@@ -127,6 +132,9 @@ set -o vi
 alias cls=clear
 alias docker-compose="docker compose"
 
-## tmp
-export GDK_SCALE=1
-export GDK_DPI_SCALE=1.5
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+
