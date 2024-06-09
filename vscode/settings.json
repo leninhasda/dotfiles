@@ -1,30 +1,33 @@
 {
-    "atomKeymap.promptV3Features": true,
-    "materialTheme.fixIconsRunning": false,
+    "editor.lineHeight": 30,
+
+    // terminal
+    
+    // plugins
+    // plugin:cucumber
+    // "indentRainbow.lightIndicatorStyleLineWidth": 1,
+    "cucumberautocomplete.skipDocStringsFormat": false,
     "terminal.integrated.fontSize": 15,
     // "terminal.integrated.fontFamily": "Courier New",
-    "terminal.integrated.lineHeight": 1.5,
-    "editor.lineHeight": 26,
+    "terminal.integrated.lineHeight": 1.8,
     "terminal.integrated.fontWeightBold": "normal",
     "editor.multiCursorModifier": "ctrlCmd",
     "editor.formatOnPaste": true,
-    "editor.minimap.enabled": false,
     "workbench.startupEditor": "newUntitledFile",
     "window.title": "${activeEditorMedium}${separator}${rootName}",
     "explorer.autoReveal": false,
-    "todohighlight.isEnable": true,
+    // "todohighlight.isEnable": true,
     "editor.renderWhitespace": "all",
     "workbench.editor.closeEmptyGroups": false,
-    "workbench.colorTheme": "Solarized Dark",
-    "window.zoomLevel": 0,
-    "workbench.iconTheme": "vscode-great-icons",
-    "diffEditor.renderSideBySide": true,
-    "workbench.activityBar.visible": true,
-    "workbench.sideBar.location": "left",
-    "editor.wordWrap": "on",
+    "workbench.colorTheme": "Mariana Pro (Cool)",
+    "workbench.iconTheme": "material-icon-theme",
+    "editor.wordWrap": "off",
     "go.useLanguageServer": true,
     "cSpell.userWords": [
-        "Santali"
+        "anonymized",
+        "Santali",
+        "sqlx",
+        "Wrapf"
     ],
     //TODO Plus
     // "todo.file.name": "*.list", // Todo file name. Other supported names are: `*.todo`, `*.todos`, `*.task`, `*.tasks`, `*.taskpaper` and `todolist.txt`
@@ -36,45 +39,55 @@
     //     "*.tasks",
     //     "*.list",
     // ], // Globs to use for including files
-    "todo.file.exclude": [
-        "**/.!(list|todo|todos|task|tasks)/**", 
-    ], // Globs to use for excluding files
+    "todo.file.exclude": [ "**/.!(list|todo|todos|task|tasks)/**"],
+     // Globs to use for excluding files
     // "todo.file.view.expanded": true, // Start the tree in an expanded state
     "todo.indentation": "  ", // String used for indentation
-    // "todo.symbols.box": "☐", // Box symbol
-    // "todo.symbols.done": "✔", // Done symbol
+    "todo.symbols.box": "[ ]", // Box symbol
+    "todo.symbols.done": "[x]", // Done symbol
     // "todo.symbols.cancelled": "✘", // Cancelled symbol
     // "todo.colors.done": "#a6e22e", // Done todo color
     // "todo.colors.cancelled": "#f92672", // Cancelled todo color
     // "todo.colors.code": "#fd971f", // Code color
     // "todo.colors.comment": "#75715e", // Comment color
+    "todo.colors.comment": "#b6b6b6", // Comment color
     // "todo.colors.project": "#66d9ef", // Project color
     // "todo.colors.projectStatistics": "#4694a3", // Project statistics color
     // "todo.colors.tag": "#e6db74", // Tag color
+    "todo.colors.tag": "#ad8686", // Tag color
     // "todo.colors.tags.background": [
     //     "#e54545",
     //     "#e59f45",
     //     "#e5d145",
     //     "#ae81ff"
     // ], // Special tags' background colors
-    // "todo.colors.tags.foreground": [
-    //     "#000000",
-    //     "#000000",
-    //     "#000000",
-    //     "#000000"
-    // ], // Special tags' foreground colors
+    
     // "todo.colors.types": {
     //     "TODO": "#ffcc00",
     //     "FIXME": "#cc0000" ...
     // }, // Object mapping todo types to their color
     // "todo.colors.dark": { /* "done": "white", ... */}, // Colors for dark themes
     // "todo.colors.light": { /* "done": "black", ... */}, // Colors for light themes
-    // "todo.tags.names": [
-    //     "critical",
-    //     "high",
-    //     "low",
-    //     "today"
-    // ], // Special tags' names
+    "todo.tags.names": [
+        "critical",
+        "high",
+        "low",
+        "today",
+        "in-review",
+        "blocked",
+        "moved",
+        "started"
+    ], // Special tags' names
+    "todo.colors.tags.foreground": [
+        "#000000",
+        "#ff0000",
+        "#00ff00",
+        "#0000ff",
+        "#72c2ff",
+        "#ff00ff",
+        "#0ebeff",
+        "#0000ff"
+    ], // Special tags' foreground colors
     // "todo.tags.namesInference": true, // Infer commonly used tags' names
     // "todo.archive.name": "Archive", // Name of the special "Archive" section
     // "todo.archive.remove.emptyProjects": true, // Remove projects without todos
@@ -85,8 +98,7 @@
     // "todo.formatting.enabled": true, // Enable markdown-like formatting
     "todo.timekeeping.created.enabled": true,
     "explorer.confirmDragAndDrop": false,
-    "editor.fontFamily": "'Fira Code', Menlo, Monaco, 'Courier New', monospace",
-    "editor.fontSize": 14, // Enable the @created tag
+    // "editor.fontWeight": "500",
     // "todo.timekeeping.created.time": true, // Insert the time inside the @created tag
     // "todo.timekeeping.created.format": "YY-MM-DD HH:mm", // Format used for displaying time inside @created
     // "todo.timekeeping.started.time": true, // Insert the time inside the @started tag
@@ -137,4 +149,162 @@
     // "todo.embedded.view.groupByFile": true, // Group embedded todos by file
     // "todo.embedded.view.expanded": true, // Start the tree in an expanded state
     // "todo.embedded.view.icons": true // Show icons next to todos and types"
+    "editor.quickSuggestions": {
+        "comments": true
+    }
+    ,
+    // "workbench.fontAliasing": "antialiased",
+    "git.inputValidationSubjectLength": null,
+    "git.inputValidationLength": 120,
+    "editor.trimAutoWhitespace": false,
+    "files.trimTrailingWhitespace": false,
+    "editor.useTabStops": false,
+    "diffEditor.ignoreTrimWhitespace": false,
+    "editor.rulers": [
+        80,
+        120
+    ],
+    "workbench.colorCustomizations": {
+        "editorRuler.foreground": "#505050",
+        "[Gruvbox Material Dark]": {
+            "sideBar.border": "#595353",
+            // "sideBar.border": "#72c2ff",
+        }
+    },
+    "[json]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    // "python.showStartPage": false,
+    "[yaml]": {
+        "editor.defaultFormatter": "redhat.vscode-yaml"
+    },
+    "git.enableSmartCommit": true,
+    // "todo-tree.tree.showScanModeButton": false,
+    // deprecated
+    // "terminal.integrated.shellArgs.osx": [
+    //     "-c",
+    //     "if [ -e .env ]; then export $(cat .env | xargs); fi; zsh;"
+    // ],
+    "terminal.integrated.tabs.enabled": true,
+    "markdown.marp.enableHtml": true,
+    "workbench.editorAssociations": {
+        "*.png": "luna.editor",
+        "*.ipynb": "jupyter-notebook",
+        "*.plist": "default"
+    },
+    "editor.tabSize": 2,
+    "editor.cursorStyle": "line",
+    "editor.wordSeparators": "/\\()\"':,.;<>~!@#$%^&*|+=[]{}`?-",
+    "security.workspace.trust.untrustedFiles": "open",
+    "notebook.cellToolbarLocation": {
+        "default": "right",
+        "jupyter-notebook": "left"
+    },
+    "notebook.lineNumbers": "on",
+    "search.showLineNumbers": true,
+    "[html]": {
+        "editor.defaultFormatter": "vscode.html-language-features"
+    },
+    "[proto]": {
+        "editor.tabSize": 2,
+        "editor.insertSpaces": true
+    },
+    "markdown.extension.list.indentationSize": "inherit",
+    "[sql]": {
+        "editor.defaultFormatter": "mtxr.sqltools"
+    },
+    "go.toolsManagement.autoUpdate": true,
+    // "bracketPairColorizer.depreciation-notice": false,
+    // "kite.showWelcomeNotificationOnStartup": false,
+    "markdown.styles": [
+        "https://use.fontawesome.com/releases/v5.7.1/css/all.css"
+    ],
+    "editor.tokenColorCustomizations": {
+        // "[GitHub Dark Dimmed]": {
+        "[*]": {
+            "textMateRules": [
+                {
+                    "scope": "keyword.function.go",
+                    "settings": {
+                        "fontStyle": "italic"
+                    }
+                },
+                // {
+                //     "scope": "comment.line.double-slash.go",
+                //     "settings": {
+                //         "fontStyle": "italic"
+                //     }
+                // },
+                {
+                    "scope": "markup.inline.raw.string.markdown",
+                    "settings": {
+                        "foreground": "#93d56a",
+                        // "fontStyle": "bold"
+                    }
+                },
+                {
+                    "scope": "punctuation.definition",
+                    "settings": {
+                        "foreground": "#d7b94d",
+                        // "fontStyle": "bold"
+                    }
+                }, 
+                {
+                    "scope": "markup.quote.markdown",
+                    "settings": {
+                        "foreground": "#d8d198",
+                        "fontStyle": "italic"
+                    }
+                },
+                {
+                    // "scope": "meta.structure.dictionary.value.json.comments",
+                    "scope": "support.type.property-name.json.comments",
+                    "settings": {
+                        // "foreground": "#99C794"
+                        // "foreground": "#c09924"
+                    }
+                },
+                {
+                    "scope": "support.type.property-name",
+                    "settings": {
+                        // "foreground": "#b75301"
+                        "foreground": "#A3CE9E"
+                    }
+                },
+                {
+                    "scope": "string.quoted.double.json.comments",
+                    // "scope": "string.quoted.double",
+                    // "scope": "support.type.property-name.json.comments",
+                    "settings": {
+                        "foreground": "#deb510"
+                    }
+                }
+            ]
+        }
+    },
+    // "rapidapi.terminalLink.enabled": false,
+    "redhat.telemetry.enabled": false,
+    // vim keybinding fix
+    "vim.useCtrlKeys": true,
+    "vim.handleKeys": { 
+        "<C-w>": false
+        , "<C-j>": false 
+        , "<C-m>": false
+        , "<caps>": false
+        , "<C-a>": false
+        , "<C-f>": false
+        , "<C-c>": false
+        , "<C-v>": false
+        , "<C-x>": false
+    },
+    "workbench.editor.untitled.hint": "hidden",
+    "[python]": {
+        "editor.formatOnType": true
+    },
+    "explorer.confirmDelete": false,
+    "editor.lineNumbers": "relative",
+    "editor.fontSize": 17,
+    "githubPullRequests.pullBranch": "never",
+    "telemetry.telemetryLevel": "off",
+    "go.goroot": "/snap/go/current"
 }
