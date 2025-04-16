@@ -1,1 +1,4 @@
-git/hf-config.toml
+*~
+.DS_Store
+
+ignore/
