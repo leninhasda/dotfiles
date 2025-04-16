@@ -1,0 +1,140 @@
+{
+  "$schema": "https://raw.githubusercontent.com/LGUG2Z/komorebi/v0.1.33/schema.json",
+  "app_specific_configuration_path": "$Env:USERPROFILE/applications.json",
+  "window_hiding_behaviour": "Cloak",
+  "cross_monitor_move_behaviour": "Insert",
+  "default_workspace_padding": 0,
+  "default_container_padding": 0,
+  "border": true,
+  "border_style": "Square",
+  "border_colours": {
+    "unfocused": {
+      "r": 0,
+      "g": 0,
+      "b": 0
+    },
+    "floating": {
+      "r": 255,
+      "g": 0,
+      "b": 0
+    },
+    "monocle": {
+      "r": 0,
+      "g": 255,
+      "b": 0
+    },
+    "single": {
+      "r": 0,
+      "g": 0,
+      "b": 255
+    },
+    "stack": {
+      "r": 255,
+      "g": 255,
+      "b": 0
+    }
+  },
+  "border_width": 4,
+  "border_offset": 0,
+  "theme": {
+    "palette": "Catppuccin",
+    "name": "Mocha",
+    "unfocused_border": "Base",
+    "bar_accent": "Teal"
+  },
+  "stackbar": {
+    "height": 35,
+    "mode": "OnStack",
+    "tabs": {
+      "width": 300
+    }
+  },
+  "monitors": [
+    {
+      "workspaces": [
+        {
+          "name": "I",
+          "layout": "BSP",
+          "initial_workspace_rules": [
+            {
+              "kind": "Exe",
+              "id": "brave.exe"
+            },
+            {
+              "kind": "Exe",
+              "id": "chrome.exe"
+            }
+          ]
+        },
+        {
+          "name": "II",
+          "layout": "BSP",
+          "initial_workspace_rules": [
+            {
+              "kind": "Exe",
+              "id": "Code.exe"
+            },
+            {
+              "kind": "Exe",
+              "id": "powershell.exe"
+            },
+            {
+              "kind": "Exe",
+              "id": "WindowsTerminal.exe"
+            },
+            {
+              "kind": "Exe",
+              "id": "ubuntu.exe"
+            }
+          ]
+        },
+        {
+          "name": "III",
+          "layout": "BSP",
+          "initial_workspace_rules": [
+            {
+              "kind": "Exe",
+              "id": "Notion.exe"
+            },
+            {
+              "kind": "Exe",
+              "id": "Notion Calendar.exe"
+            },
+            {
+              "kind": "Exe",
+              "id": "TickTick.exe"
+            }
+          ]
+        },
+        {
+          "name": "IV",
+          "layout": "BSP",
+          "initial_workspace_rules": [
+            {
+              "kind": "Exe",
+              "id": "explorer.exe"
+            }
+          ]
+        },
+        {
+          "name": "V",
+          "layout": "BSP",
+          "initial_workspace_rules": [
+            {
+              "kind": "Exe",
+              "id": "WhatsApp.exe"
+            }
+          ]
+        },
+        {
+          "name": "VI",
+          "layout": "Grid"
+        },
+        {
+          "name": "VII",
+          "layout": "BSP"
+        }
+      ]
+    }
+  ]
+}
