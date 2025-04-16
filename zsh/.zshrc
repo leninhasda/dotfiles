@@ -101,13 +101,22 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-### lenin edit
-source ~/.aliases
+### lenin edit - start ###
+
+# setup vim mode for terminal
+set -o vi
+
+if [ -f ~/.aliases ]; then
+  source ~/.aliases
+fi
 
 # path
 export PATH=$PATH:/usr/local/go/bin
 export PATH="$PATH:$HOME/bin"
 export PATH="$PATH:$HOME/go/bin"
+
+# linux specific, comment out if not using linux
+export PATH="/snap/bin:$PATH"   # add snap bin to PATH
 
 # values
 export KUBECONFIG="$HOME/.kube/config:$HOME/.kube/eksconfig"
@@ -117,20 +126,9 @@ export KUBECONFIG="$HOME/.kube/config:$HOME/.kube/eksconfig"
 export ***REMOVED***
 
 export GO111MODULE="on"
-export GOPRIVATE=github.com/hellofresh
 
 export EDITOR=nvim
 export TERM=xterm
-
-export VAULT_ADDR="https://vault.hellofresh.io/"
-
-
-# setting
-set -o vi
-
-# shortcut
-alias cls=clear
-alias docker-compose="docker compose"
 
 
 export NVM_DIR="$HOME/.nvm"
